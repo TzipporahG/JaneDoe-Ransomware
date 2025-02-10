@@ -1,0 +1,83 @@
+* {
+    font-family:'Lucida Grande', Arial, sans-serif;
+    letter-spacing: 1.3px;
+    word-spacing: 3px;
+    line-height: 30px;
+}
+
+:root {
+    --grey: #333;
+    --red: rgb(200, 75, 45);
+    --blue: rgb(75, 45, 200);
+}
+
+body {
+    font-size: 100%;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    color: deepskyblue;
+}
+
+p, main{
+  padding: 10px;
+  margin: 5px auto;
+  text-align: justify;
+  color: var(--grey);
+}
+
+img {
+    border: solid medium var(--grey);
+}
+
+a{
+    color: var(--red);
+}
+
+a:hover {
+    color: deepskyblue; 
+}
+
+a:active {
+    color: black;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.button:hover {
+    box-shadow: 2px 2px var(--red);
+}
+
+.button:active {
+    box-shadow: 2px 2px dodgerblue;
+}
+
+header {
+    background-color: deepskyblue;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    margin-top: -58px;
+    margin-left: -50px;
+}
+
+#header-right {
+    text-align: right;
+}
+
+#header-left{
+    text-align: left;
+}
