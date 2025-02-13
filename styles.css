@@ -13,7 +13,8 @@
 
 body {
     font-size: 100%;
-    padding: 50px;
+    padding-top: 30px;
+    margin: 0px;
 }
 
 h1 {
@@ -38,6 +39,10 @@ p, main{
 
 img {
     border: solid medium var(--grey);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
 a{
@@ -52,9 +57,17 @@ a:active {
     color: black;
 }
 
-main {
+main, aside {
     max-width: 1000px;
-    margin: auto;
+    margin-top: 0px;
+    margin-right: none;
+    margin-left: 25%;
+    margin-bottom: auto;
+    width: 80%;
+}
+
+aside input {
+    margin: 10px;
 }
 
 .button:hover {
@@ -68,10 +81,10 @@ main {
 header {
     background-color: deepskyblue;
     position: fixed;
+    top: 0;
     display: flex;
     width: 100%;
-    margin-top: -58px;
-    margin-left: -50px;
+    z-index: 1000;
 }
 
 #header-right {
@@ -80,4 +93,51 @@ header {
 
 #header-left{
     text-align: left;
+}
+
+.bkmrk {
+    display: grid;
+    float: left;
+    position: fixed;
+    border-right: solid 1px var(--grey);
+    border-bottom: solid 1px var(--grey);
+    padding: 10px;
+    height: 100%;
+    width: 20%;
+    overflow-y: auto;    
+}
+
+#bkmrk-header {
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bkmrk a {
+    text-align: left;
+}
+
+footer {
+    background-color: deepskyblue;
+    display: flex;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin:0%;
+}
+
+.about-us {
+    margin-top: 20px;
+}
+
+.about-us h2 {
+    color: var(--red)
+}
+
+.about-us a {
+    color: var(--blue);
+}
+
+.about-us header {
+    background-color: var(--red);
 }
