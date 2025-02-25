@@ -141,3 +141,7 @@ footer {
 .about-us header {
     background-color: var(--red);
 }
+
+@media(max-width: 900px) {
+   .bkmrk {visibility: hidden;}
+}
